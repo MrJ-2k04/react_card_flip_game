@@ -1,0 +1,24 @@
+.topboard h3{
+
+}
+
+.topboard button{
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: transparent;
+    color: white;
+}
+
+.topboard button:hover{
+    transition-duration: 0.1s;
+    background-color: rgba(255, 255, 255, 0.253);
+    color: rgb(43, 255, 0);
+    box-shadow: 1px 1px 10px rgb(255, 255, 255, 0.5);
+}
+
+.topboard button:active{
+    color: rgb(255, 255, 255);  
+    margin-top: 4px;
+    margin-left: 1px;
+}

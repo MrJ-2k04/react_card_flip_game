@@ -1,0 +1,41 @@
+.grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin: 20px auto 20px;
+    display: grid;
+    max-width: 80%;
+    min-width: 1140px;
+}
+
+.grid-item{
+    
+    background: transparent;
+    /* transition: transform 0.6s;
+    transform-style: preserve-3d; */
+}
+
+
+.grid-item .front{
+    border: 1px solid white;
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+
+}
+.flipped .front{
+    border: 1px solid white;
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+.grid-item .back{
+    border: 1px solid white;
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+    position: absolute;
+}
+
+.flipped .back{
+    border: 1px solid white;
+    transform: rotateY(90deg);
+    transition-delay: 0.2s;
+}
